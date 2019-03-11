@@ -8,6 +8,5 @@ namespace VanLanschot.Feature.VolleyGroup.Repositories
     {
         void SetVolleyGroupExternalId(string externalId);
         VolleyGroupFacet GetVolleyGroupFacetFromCurrentContact();
-        Contact GetXConnectContactbyId(ContactIdentifier identifier);
     }
 }

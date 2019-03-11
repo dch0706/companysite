@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Sitecore.Analytics;
-using Sitecore.Analytics.XConnect.Facets;
 using Sitecore.Diagnostics;
 using Sitecore.XConnect;
 using Sitecore.XConnect.Client;
@@ -62,48 +61,16 @@ namespace VanLanschot.Feature.VolleyGroup.Repositories
             {
                 try
                 {
-                    var source = WebsiteSourceIdentifier;
-
-                    var contact = client.Get(new IdentifiedContactReference(anyIdentifier.Source, anyIdentifier.Identifier), new ContactExpandOptions(VolleyGroupFacet.DefaultFacetKey));
-                    return contact.GetVolleyGroupFacet();
+                    if (anyIdentifier != null)
+                    {
+                        var contact = client.Get(new IdentifiedContactReference(anyIdentifier.Source, anyIdentifier.Identifier), new ContactExpandOptions(VolleyGroupFacet.DefaultFacetKey));
+                        return contact.GetVolleyGroupFacet();
+                    }
                 }
                 catch (Exception ex)
                 {
                     Log.Error(ex.Message, this);
                 }
-
-                return null;
-            }
-
-
-
-
-            var xConnectFacets = Tracker.Current.Contact.GetFacet<IXConnectFacets>("XConnectFacets");
-            var volleyGroupFacet = xConnectFacets?.Facets
-                .FirstOrDefault(f => f.Key == VolleyGroupFacet.DefaultFacetKey).Value;
-
-            return volleyGroupFacet as VolleyGroupFacet;
-        }
-
-        public Contact GetXConnectContactbyId(ContactIdentifier identifier)
-        {
-            using (var client = SitecoreXConnectClientConfiguration.GetClient())
-            {
-                //try
-                //{
-                //    var source = WebsiteSourceIdentifier;
-
-                //    var reference = new ContactReference(id);
-
-                //    var existingContact = client.Get(reference,
-                //        new ContactExpandOptions(VolleyGroupFacet.DefaultFacetKey));
-
-                //    return existingContact;
-                //}
-                //catch (Exception ex)
-                //{
-                //    Log.Error(ex.Message, this);
-                //}
 
                 return null;
             }
