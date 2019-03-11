@@ -1,0 +1,69 @@
+<#@ template language="C#" #>
+<#@ output encoding="utf-8"#>
+<#@ assembly name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="HedgehogDevelopment.SitecoreProject.VSIP.CodeGeneration.Models" #>
+
+<#@ include file="Helpers.tt" #>
+<#@ include file="StringExtensions.tt" #>
+<#@ include file="GeneralExtensions.tt" #>
+<#@ include file="Inflector.tt" #>
+
+<#@ parameter
+	name="Model"
+	type="HedgehogDevelopment.SitecoreProject.VSIP.CodeGeneration.Models.SitecoreItem" #>
+
+<#@ parameter name="DefaultNamespace" type="System.String" #>
+
+<#
+	var className = AsClassName(Model.Name);
+	var idType = ResolveIdType(Model);
+	var idValue = ResolveIdValue(Model);
+#>
+
+namespace <#= GetNamespace(DefaultNamespace, Model)#>
+{
+	/// <summary>Generated constants for <#=Model.Name #></summary>
+	public static partial class Constants
+	{
+		/// <summary>
+		/// <para><#=Model.Name #></para>
+		/// <para>Path: <#=Model.Path #></para>
+		/// <para>Template: <#=Model.TemplateId #> (<#=Model.TemplateName #>)</para>
+		/// </summary>
+<#
+	if (IsBranchTemplate(Model) == false)
+	{
+#>
+		[NotNull]
+<#
+	}
+#>
+		public static readonly <#=idType #> <#=className #> =
+			<#=idValue #>;
+	}
+}
+
+<#+
+public bool IsBranchTemplate(SitecoreItem model)
+{
+	return model.TemplateId
+		.Equals(new Guid("35e75c72-4985-4e09-88c3-0eac6cd1e64f"));
+}
+
+public string ResolveIdType(SitecoreItem model)
+{
+	return IsBranchTemplate(model) ? "BranchId" : "ID";
+}
+
+public string ResolveIdValue(SitecoreItem model)
+{
+	var idValue = "new ID(\"" + model.ID + "\")";
+	return IsBranchTemplate(model) ?
+		"new BranchId(" + idValue + ")" :
+		idValue;
+}
+#>

@@ -1,0 +1,22 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<VanLanschot.Feature.Navigation.ViewModels.HeaderNavigationViewModel>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Company Site</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            @if (Model.MenuItems != null)
+            {
+                foreach (var menuItem in Model.MenuItems)
+                 {
+                     <li class="nav-item active">
+                         @RenderLink(menuItem, m => m.Menu_Link)
+                         @*<a class="nav-link" href="@(menuItem.Menu_Link != null ? menuItem.Menu_Link.Url : "#")">@menuItem.Menu_Link.Text</a>*@
+                     </li>
+                 }
+            }
+        </ul>
+    </div>
+</nav>

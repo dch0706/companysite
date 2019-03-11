@@ -1,0 +1,33 @@
+{
+  "Name": "VanLanschot.Feature.VolleyGroup.XConnect.ContactCustomModel",
+  "Version": "1.0",
+  "References": [
+    {
+      "Name": "XConnect",
+      "Version": "1.0"
+    },
+    {
+      "Name": "Sitecore.XConnect.Collection.Model",
+      "Version": "9.0"
+    }
+  ],
+  "Types": {
+    "VanLanschot.Feature.VolleyGroup.XConnect.Facets.VolleyGroupFacet": {
+      "Type": "Facet",
+      "BaseType": "Sitecore.XConnect.Facet",
+      "ClrType": "VanLanschot.Feature.VolleyGroup.XConnect.Facets.VolleyGroupFacet, VanLanschot.Feature.VolleyGroup, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Properties": {
+        "ExternalId": {
+          "Type": "String"
+        }
+      }
+    }
+  },
+  "Facets": [
+    {
+      "Target": "Contact",
+      "Name": "VolleyGroupFacet",
+      "Type": "VanLanschot.Feature.VolleyGroup.XConnect.Facets.VolleyGroupFacet"
+    }
+  ]
+}

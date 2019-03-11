@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {1CBD4557-02AC-4D58-B3A1-B49CB8938496}
+database: master
+path: /sitecore/layout/Renderings/Feature/Navigation/Header Navigation
+parent: {D13AD99B-E598-4B88-8D2A-46330EAE8483}
+name: Header Navigation
+master: {00000000-0000-0000-0000-000000000000}
+template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
+templatekey: Controller rendering
+created: 20190310T220835Z
+
+----field----
+field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
+name: Controller
+key: controller
+content-length: 94
+
+VanLanschot.Feature.Navigation.Controllers.NavigationController,VanLanschot.Feature.Navigation
+----field----
+field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
+name: Controller Action
+key: controller action
+content-length: 16
+
+HeaderNavigation
+----field----
+field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
+name: Datasource Template
+key: datasource template
+content-length: 68
+
+/sitecore/templates/Project/Company Site/Content Types/MenuItemGroup
+----version----
+language: en
+version: 1
+revision: ce305ffb-e513-421d-8c26-9926f16310e0
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190310T220835Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ce305ffb-e513-421d-8c26-9926f16310e0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190311T012441Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

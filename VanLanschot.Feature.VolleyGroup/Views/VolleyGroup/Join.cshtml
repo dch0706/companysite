@@ -1,0 +1,16 @@
+﻿@using System.Web.Mvc.Html
+@using Sitecore.Mvc
+@using VanLanschot.Foundation.Kernel.HtmlHelpers
+@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<VanLanschot.Feature.VolleyGroup.ViewModels.JoinVolleyGroupViewModel>
+
+@using (Html.BeginanLasschotForm("joinVolleyGroup"))
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="fhController" value="VolleyGroupController" />
+    <input type="hidden" name="fhAction" value="Join" />
+<div class="form-group">
+    @Html.LabelFor(m => m.ExternalId)
+    @Html.TextBoxFor(m => m.ExternalId)
+</div>
+<button type="submit" class="btn btn-primary">Join Volley Community</button>
+}
