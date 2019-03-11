@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {FEA65071-66D5-4257-BA1E-0D8AC950F1A9}
+id: {814546EA-E096-46A3-8B00-5EE2E40A0774}
 database: master
 path: /sitecore/templates/Project/Company Site/Page Types/Content Page/__Standard Values
 parent: {84391020-2479-4151-96EA-F103D6554300}
@@ -8,19 +8,19 @@ name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {84391020-2479-4151-96EA-F103D6554300}
 templatekey: Content Page
-created: 20190310T215856Z
+created: 20190311T224938Z
 
 ----field----
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 328
+content-length: 1033
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{D5F28D2C-14E1-4655-A340-3B5F3F0AD55D}"><r ds="{A0C46DF9-4350-40D3-929B-058B435BEB25}" id="{1CBD4557-02AC-4D58-B3A1-B49CB8938496}" par="" ph="vanlanschot-companysite-header" uid="{0F03A24B-D1F8-4D9F-84F8-F932C5E7B979}" /></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{D5F28D2C-14E1-4655-A340-3B5F3F0AD55D}"><r id="{1CBD4557-02AC-4D58-B3A1-B49CB8938496}" ph="vanlanschot-companysite-header" uid="{37FA1109-97A4-4D37-AD56-8B34DC492BAF}"><rls><ruleset><rule name="Has External Id" uid="{EA6316AF-D8CB-4B26-9E68-7ADCE3B7BDAA}"><conditions><condition id="{20E27448-201F-47B7-BA66-C0E5690A20F1}" uid="46778E40B6634FFE8B7CEFA64E300794" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="03333E9A3AD147748C7AB9900FF08330" DataSource="{708C1F13-2CC7-47FF-AB72-8ACE231A6319}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition id="{4888ABBB-F17D-4485-B14B-842413F88732}" uid="8C627BC9007E4D6B8021EE7DC73FA289" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="0B1647D82FE84D5A9BC4E8A3E38ACE9D" DataSource="{A0C46DF9-4350-40D3-929B-058B435BEB25}" /></actions></rule></ruleset></rls></r></d></r>
 ----version----
 language: en
 version: 1
-revision: bbc3a987-c641-445d-acd4-65c69f9c4b82
+revision: 393ccdbb-e818-4856-b231-c866566e8ff2
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -35,7 +35,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20190310T215856Z
+20190311T224938Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bbc3a987-c641-445d-acd4-65c69f9c4b82
+393ccdbb-e818-4856-b231-c866566e8ff2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190311T012520Z
+20190311T225242Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

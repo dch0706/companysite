@@ -68,6 +68,15 @@
     <Reference Include="Remotion.Linq, Version=2.1.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
       <HintPath>..\packages\Remotion.Linq.2.1.1\lib\net45\Remotion.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Analytics, Version=11.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.NoReferences.9.0.180604\lib\NET462\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model, Version=11.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.Model.NoReferences.9.0.180604\lib\NET462\Sitecore.Analytics.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.XConnect, Version=11.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.XConnect.NoReferences.9.0.180604\lib\NET462\Sitecore.Analytics.XConnect.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Framework.Conditions, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Framework.Conditions.1.1.12\lib\net462\Sitecore.Framework.Conditions.dll</HintPath>
     </Reference>
@@ -160,6 +169,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IXdbRepository.cs" />
     <Compile Include="Repositories\XdbRepository.cs" />
+    <Compile Include="Rules\Conditions\HasVolleyGroupIdentifier.cs" />
     <Compile Include="ViewModels\JoinVolleyGroupViewModel.cs" />
     <Compile Include="XConnect\ContactCustomModel.cs" />
     <Compile Include="XConnect\Extensions\FacetExtensions.cs" />

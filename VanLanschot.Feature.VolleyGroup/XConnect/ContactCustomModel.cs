@@ -11,10 +11,12 @@ namespace VanLanschot.Feature.VolleyGroup.XConnect
 
         private static XdbModel BuildModel()
         {
-            var xdbModelBuilder = new XdbModelBuilder("VanLanschot.Feature.VolleyGroup.XConnect.ContactCustomModel", new XdbModelVersion(1, 0));
+            var xdbModelBuilder = new XdbModelBuilder("ContactCustomModel", new XdbModelVersion(1, 0));
+
+            xdbModelBuilder.DefineFacet<Contact, VolleyGroupFacet>(VolleyGroupFacet.DefaultFacetKey);
 
             xdbModelBuilder.ReferenceModel(CollectionModel.Model);
-            xdbModelBuilder.DefineFacet<Contact, VolleyGroupFacet>(VolleyGroupFacet.DefaultFacetKey);
+
             return xdbModelBuilder.BuildModel();
         }
     }

@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {1B5AAD7D-64D1-4F3D-B560-633CC9260E29}
+id: {DF6604C6-C314-4EE2-8A3F-FA0AD3D272BD}
 database: master
 path: /sitecore/templates/Project/Company Site/Page Types/Join Volley Group/__Standard Values
 parent: {CF8D09B7-70B2-4309-8F52-0953869B5B72}
@@ -8,19 +8,19 @@ name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {CF8D09B7-70B2-4309-8F52-0953869B5B72}
 templatekey: Join Volley Group
-created: 20190311T084915Z
+created: 20190311T225304Z
 
 ----field----
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 459
+content-length: 1164
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{D5F28D2C-14E1-4655-A340-3B5F3F0AD55D}"><r ds="{A0C46DF9-4350-40D3-929B-058B435BEB25}" id="{1CBD4557-02AC-4D58-B3A1-B49CB8938496}" par="" ph="vanlanschot-companysite-header" uid="{0F03A24B-D1F8-4D9F-84F8-F932C5E7B979}" /><r id="{FE4CA288-3D86-4DD9-9387-EA3403BE8DA8}" ph="vanlanschot-companysite-content" uid="{49FCBACA-3A0A-4B1E-9E70-85D678F209F6}" /></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{D5F28D2C-14E1-4655-A340-3B5F3F0AD55D}"><r id="{1CBD4557-02AC-4D58-B3A1-B49CB8938496}" ph="vanlanschot-companysite-header" uid="{37FA1109-97A4-4D37-AD56-8B34DC492BAF}"><rls><ruleset><rule name="Has External Id" uid="{EA6316AF-D8CB-4B26-9E68-7ADCE3B7BDAA}"><conditions><condition id="{20E27448-201F-47B7-BA66-C0E5690A20F1}" uid="46778E40B6634FFE8B7CEFA64E300794" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="03333E9A3AD147748C7AB9900FF08330" DataSource="{708C1F13-2CC7-47FF-AB72-8ACE231A6319}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" name="Default"><conditions><condition id="{4888ABBB-F17D-4485-B14B-842413F88732}" uid="8C627BC9007E4D6B8021EE7DC73FA289" /></conditions><actions><action id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" uid="0B1647D82FE84D5A9BC4E8A3E38ACE9D" DataSource="{A0C46DF9-4350-40D3-929B-058B435BEB25}" /></actions></rule></ruleset></rls></r><r id="{FE4CA288-3D86-4DD9-9387-EA3403BE8DA8}" ph="vanlanschot-companysite-content" uid="{C288AD1A-0BCB-4BED-8B2D-F8F810F4A0CC}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: aabb434e-1f74-473c-9259-36fc719a546d
+revision: 808815bf-6f38-4e37-99a6-6bbdc91455f1
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -28,21 +28,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20190311T084915Z
+20190311T225304Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-aabb434e-1f74-473c-9259-36fc719a546d
+808815bf-6f38-4e37-99a6-6bbdc91455f1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190311T084955Z
+20190311T225329Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

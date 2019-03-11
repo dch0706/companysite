@@ -13,7 +13,7 @@ created: 20190310T233801Z
 ----version----
 language: en
 version: 1
-revision: 39c82772-2151-4191-8fab-3cd501ba7724
+revision: b158e195-a6bb-42ec-8a0f-d496655b730c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -28,14 +28,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-39c82772-2151-4191-8fab-3cd501ba7724
+b158e195-a6bb-42ec-8a0f-d496655b730c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190310T233801Z
+20190311T223640Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -43,3 +43,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -32,11 +32,11 @@ namespace VanLanschot.Feature.VolleyGroup.Controllers
         [ValidateFormHandler]
         public ActionResult Join(JoinVolleyGroupViewModel model)
         {
+            //var json = XdbModelWriter.Serialize(ContactCustomModel.Model);
             if (!string.IsNullOrEmpty(model.ExternalId))
             {
                 _xdbRepository.SetVolleyGroupExternalId(model.ExternalId);
             }
-            //var json = XdbModelWriter.Serialize(ContactCustomModel.Model);
             return View("Join", model);
         }
     }
