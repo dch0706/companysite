@@ -24,10 +24,17 @@ key: controller action
 content-length: 4
 
 Join
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{E1AFD262-7DC5-40D4-84C3-8C457F436865}" />
 ----version----
 language: en
 version: 1
-revision: ad5c44f5-88a2-4d47-96a7-cba5782aaa74
+revision: 18b69dd5-8db4-4f40-900f-573f169876ef
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ad5c44f5-88a2-4d47-96a7-cba5782aaa74
+18b69dd5-8db4-4f40-900f-573f169876ef
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190311T084844Z
+20190312T004012Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

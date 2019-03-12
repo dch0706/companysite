@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {C3C6119C-F94B-4737-BB93-E6B0B809C8A7}
+database: master
+path: /sitecore/layout/Placeholder Settings/Project/Company Site/vanlanschot-companysite-header
+parent: {A8C68E87-AD64-4FAA-98F2-6EA6D2ED6DB4}
+name: vanlanschot-companysite-header
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
+templatekey: Placeholder
+created: 20190312T002635Z
+
+----field----
+field: {7256BDAB-1FD2-49DD-B205-CB4873D2917C}
+name: Placeholder Key
+key: placeholder key
+content-length: 30
+
+vanlanschot-companysite-header
+----field----
+field: {E391B526-D0C5-439D-803E-17512EAE6222}
+name: Allowed Controls
+key: allowed controls
+content-length: 38
+
+{1CBD4557-02AC-4D58-B3A1-B49CB8938496}
+----version----
+language: en
+version: 1
+revision: 6b26f854-94af-4413-92a9-e09c55996108
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190312T002635Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6b26f854-94af-4413-92a9-e09c55996108
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190312T002728Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

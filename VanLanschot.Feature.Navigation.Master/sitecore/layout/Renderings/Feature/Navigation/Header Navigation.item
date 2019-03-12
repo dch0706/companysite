@@ -31,10 +31,17 @@ key: datasource template
 content-length: 68
 
 /sitecore/templates/Project/Company Site/Content Types/MenuItemGroup
+----field----
+field: {C7C26117-DBB1-42B2-AB5E-F7223845CCA3}
+name: __Thumbnail
+key: __thumbnail
+content-length: 58
+
+<image mediaid="{43A2C0DD-4856-4502-91AA-00B5E2E46A55}" />
 ----version----
 language: en
 version: 1
-revision: ce305ffb-e513-421d-8c26-9926f16310e0
+revision: b03bd8f4-1cbc-4f00-87b2-c9deeea92d7b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ce305ffb-e513-421d-8c26-9926f16310e0
+b03bd8f4-1cbc-4f00-87b2-c9deeea92d7b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190311T012441Z
+20190312T003954Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
