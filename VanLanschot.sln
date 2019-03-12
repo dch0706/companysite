@@ -5,6 +5,7 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Solution Items", "{298820E4-E2A8-4FFE-BFAA-CDEAE0152A62}"
 	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
 		TdsGlobal.config = TdsGlobal.config
 	EndProjectSection
 EndProject
